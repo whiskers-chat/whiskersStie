@@ -1,7 +1,7 @@
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
-const members = [
+let members = [
   {
     avatar: '/finleyPFP.png',
     name: 'Finley224',
