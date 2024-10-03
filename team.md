@@ -3,15 +3,6 @@ import { VPTeamMembers } from 'vitepress/theme'
 
 let members = [
   {
-    avatar: 'https://avatars.githubusercontent.com/u/161162126?v=4',
-    name: 'Finley224',
-    title: 'Backend Dev, Sysadmin/IT',
-    desc: 'they/them',
-    links: [
-      { icon: 'github', link: 'https://github.com/Finley224' },
-    ]
-  },
-  {
    avatar: 'https://avatars.githubusercontent.com/u/81255936?v=4',
    name: 'ajskateboarder',
    title: 'Backend Dev',
@@ -29,10 +20,20 @@ let members = [
      { icon: 'github', link: 'https://github.com/ArrowAced' },
    ]
  }
-].sort( () => .5 - Math.random() );
+ {
+    avatar: 'https://avatars.githubusercontent.com/u/161162126?v=4',
+    name: 'Finley224',
+    title: 'Backend Dev, Sysadmin/IT',
+    desc: 'they/them',
+    links: [
+      { icon: 'github', link: 'https://github.com/Finley224' },
+    ]
+  },
+]
+
 </script>
 
 # Our Team
 
-These are the people who helped make this project possible. (Order of names is random and changes on each page load)
+These are the people who helped make this project possible.
 <VPTeamMembers size="small" :members="members" />
