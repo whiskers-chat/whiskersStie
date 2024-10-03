@@ -19,7 +19,7 @@ let members = [
    links: [
      { icon: 'github', link: 'https://github.com/ArrowAced' },
    ]
- }
+ },
  {
     avatar: 'https://avatars.githubusercontent.com/u/161162126?v=4',
     name: 'Finley224',
