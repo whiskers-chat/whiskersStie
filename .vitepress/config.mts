@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,14 +7,25 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Team', link: '/team.md'}
+      { text: "Home", link: "/" },
+      { text: "Team", link: "/team.md" },
+      { text: "Docs", link: "/docs/main.md" },
     ],
 
-    sidebar: [],
+    sidebar: {
+      "/docs/": [{
+        text: "Docs",
+        items: [
+          { text: "Clock Bot", link: "/docs/clock/main.md" },
+        ],
+      }],
+    },
 
+    search: {
+      provider: "local",
+    },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/whiskers-chat' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/whiskers-chat" },
+    ],
+  },
+});
