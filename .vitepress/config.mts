@@ -16,7 +16,7 @@ export default defineConfig({
       "/docs/": [{
         text: "Docs",
         items: [
-          { text: "Clock Bot", link: "/docs/clock/main.md" },
+          { text: "Clock Bot", link: "/docs/clockDocs.md" },
         ],
       }],
     },
