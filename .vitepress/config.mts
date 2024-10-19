@@ -24,6 +24,9 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    footer: {
+      message: "In this US election our civil rights are on the line, if you are eligible, make a plan to vote at https://iwillvote.com/.",
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/whiskers-chat" },
     ],
